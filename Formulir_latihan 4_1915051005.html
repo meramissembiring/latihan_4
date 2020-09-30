@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Waspada Virus Corona</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />	
+	<script type="text/javascript" src="jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="Formulir_latihan 4_1915051005.css">
+</head>
+<body>
+	<div class="kotak">		
+		<h1>
+			Gejala yang anda alami <br/>			
+			
+		</h1>	
+		
+		<form class="form">
+			<input type="text" id="demam" placeholder="Tuliskan demam .." name="demam" autocomplete="off">
+			<input type="text" id="batuk kering" placeholder="Tuliskan batuk kering .." name="batuk kering" autocomplete="off">
+			<input type="text" id="kelelahan" placeholder="Tuliskan kelelahan  .." name="kelelahan" autocomplete="off">
+			<input type="text" id="flu" placeholder="Tuliskan flu  .." name="flu" autocomplete="off">
+		</form>
+	</div>
+	<script type ="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#demam").keyup(function(){
+				$("#batuk kering").slideDown();
+			});
+ 
+			$("#batuk kering").keyup(function(){
+				$("#kelelahan").slideDown();
+			}) ;
+			$("#kelelahan").keyup(function(){
+				$("#flu").slideDown();
+			});
+			$("#flu").keyup(function(){
+				$("#konfirmasi").slideDown();
+			
+			});
+		});
+	</script>
+</body>
+</html>
